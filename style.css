@@ -1,0 +1,43 @@
+body{background-repeat: no-repeat;background-size: 100vw 100vh;transition:all .3s ease;font-family: 'Quicksand', sans-serif;padding: 25px}body::before{content:"\00A9 Rayya R";color:white;opacity:.1;font-size:5px;position:absolute;bottom:25px;left:calc(50vw - 13px);} a{text-decoration:none;}
+@keyframes meninggalkan {0% {transform: scale(1);} 100% {transform: scale(.90);}} .image .degdeg{animation: meninggalkan 2s ease-in-out alternatif tak terbatas;-webkit-animation: meninggalkan 1s kemudahan masuk-keluar alternatif tak terbatas;}
+.lovein{margin-left:7px;font-size:1.2rem;display:flex;align-items:center;justify-content:center;transition: all .1s ease;}
+.button:hover, .lovein:hover{transform: scale(.90);}
+#foto{position:relative;opacity:0;margin-top:-200px;display:flex;align-items:center;justify-content:center;text-align:center;width:100%;transition:all .5s mudah;}#foto img{border-radius:50%;}
+#teksblur{position:relative;margin-top:200px;display:flex;align-items:center;justify-content:center;opacity:0;font-size:14px;color:white;width:100%;z- indeks:10;transisi:semua 1s mudah;}
+#konten{z-index:3;position:relative;top:-50px;transisi:semua 1s mudah;}
+#bodyblur{display:block;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:1;transition:all kemudahan 1s;opacity:1;visibility:visible;-webkit-backdrop-filter:blur(5px); backdrop-filter:blur(5px);}
+
+:akar {
+--warna-background: #327D2E;
+--warna-bg-chat: #f0f5fb;
+--warna-icon: #fff;
+--warna-text: #0F0F0F;
+--warna-text-alt: #989b9f;
+--lebar-kotak obrolan: 320px;
+}
+
+svg{width: 22px;height: 22px;vertical-align: middle;fill: var(--warna-icon)}
+.chatMenu, .tombolChat .svg-2{display: none}
+
+.tombolChat{posisi: fixed;background-color: var(--warna-background);bottom: 20px;left: 20px;border-radius: 50px;z-index: 20;overflow: hidden;display:none;align- item: center;justify-content: center;width: 50px;height: 50px;-webkit-transition: all .2s ease-out;transition: all .2s ease-out}
+.tombolChat svg{margin: auto;fill: var(--warna-icon)}
+  
+.chatBox{posisi: fixed;top: 70px;left: 20px;width: var(--lebar-chatbox);-webkit-transition: all .3s ease-out;transition: all .3s ease-out;z-index : 21;opacity: 0;visibility: tersembunyi;line-height: normal}
+.chatContent{border-radius: 15px;background-color:rgba(0, 0, 0, .40);box-shadow: 0 5px 15px 0 rgba(0,0,0,.05);max-height:50vh ;melimpah: otomatis}
+.chatHead{position: relative;display: flex;align-items: center;padding: 15px 20px;background-color: var(--warna-background);overflow: hidden}
+.chatHead svg{width: 32px;height: 32px;flex-shrink: 0;fill: var(--warna-icon)}
+.chatHead img{border-radius:50%;width: 50px;height: 50px;flex-shrink: 0;}
+.chatHead .chatTitle{padding-left: 15px;font-size: 14px;color: var(--warna-icon)}
+.chatHead .chatTitle span{font-size: 11.5px;display: block;line-height: 1.58em}
+  
+.chatText{display: flex;flex-wrap: wrap;margin: 25px 20px;font-size: 13px;color: var(--warna-text)}
+.chatText span{display: none;opacity:0;-webkit-transition: all .3s ease-out;transition: all .3s ease-out;margin-top:15px;margin-right: auto;padding: 10px 10px 10px 20px;background-color: var(--warna-bg-chat);border-radius: 3px 15px 15px}
+.chatText span:after{content: 'now';margin-left: 15px;font-size: 9px;color: var(--warna-text-alt)}
+.chatText .typing{font-size: 14px;margin: 15px 0 0 auto;padding: 10px 20px 10px 10px;border-radius: 15px 3px 15px 15px}
+.chatText .typing: setelah{display: none}
+  
+.balasChat{display:none;align-items: center;margin-top: 15px;padding: 18px 20px;border-radius: 10px;background-color:rgba(0, 0, 0, .40);overflow: hidden; font-size: 12px;color: white;-webkit-transition: all .1s ease-out;transition: all .1s ease-out;}.balasChat:hover{transform: scale(.90);}
+.chatMenu:checked + .tombolChat{-webkit-transform: rotate(360deg);transform: rotate(360deg)}
+.chatMenu:dicentang + .tombolChat .svg-1{display: none}
+.chatMenu:dicentang + .tombolChat .svg-2{display: block}
+.chatMenu:checked ~ .chatBox{top: 10vh;opacity: 1;visibility: visible}
